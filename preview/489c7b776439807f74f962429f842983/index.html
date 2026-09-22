@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sho Coffee & Bar — A warm downtown escape from morning to night.</title>
+  <meta name="description" content="Sho Coffee & Bar is a welcoming downtown spot where the day flows seamlessly from a smooth morning cold brew to an evening drink. Guests describe it as a hidden" />
+  <meta name="keywords" content="Sho Coffee & Bar, Morning coffee, Cold brew, Evening drinks / bar service, Relaxed seating with room to linger" />
+  <meta property="og:title" content="Sho Coffee & Bar — A warm downtown escape from morning to night." />
+  <meta property="og:description" content="Sho Coffee & Bar is a welcoming downtown spot where the day flows seamlessly from a smooth morning cold brew to an evening drink. Guests describe it as a hidden" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_CA" />
+  
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sites.reverb256.dev/sho-coffee---bar/" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Sho Coffee & Bar",
+  "description": "Sho Coffee & Bar is a welcoming downtown spot where the day flows seamlessly from a smooth morning cold brew to an evening drink. Guests describe it as a hidden gem with a relaxed, never-rushed atmosp",
+  "address": { "@type": "PostalAddress", "streetAddress": "290 William Ave, Winnipeg, MB R3B 0R1" },
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "540"
+  },
+  
+  "review": [
+    
+    { "@type": "Review", "reviewBody": "The cold brew is the smoothest I've had. Staff are welcoming.", "author": { "@type": "Person", "name": "The cold brew is the smoothest" } },
+    
+    { "@type": "Review", "reviewBody": "Hidden gem downtown, always a seat and never rushed.", "author": { "@type": "Person", "name": "Anonymous" } },
+    
+    { "@type": "Review", "reviewBody": "They remembered our names after one visit. Top tier service.", "author": { "@type": "Person", "name": "Anonymous" } }
+    
+  ],
+  "url": "https://sites.reverb256.dev/sho-coffee---bar/" if biz and biz.slug else ""
+}
+  </script>
+  <style>
+/* ══════════════════════════ DESIGN TOKENS ══════════════════════════ */
+
+:root {
+  --canvas: #f5f0eb;
+  --surface: #faf5f0;
+  --surface-alt: #ede4da;
+  --text: #2c2420;
+  --text-muted: #7a6e66;
+  --accent: #b85c3a;
+  --accent-alt: #e8d5c8;
+  --accent-text: #ffffff;
+  --border: #ddd0c4;
+  --highlight: #b85c3a;
+  --announcement: #b85c3a;
+  --rating-color: #b85c3a;
+  --font-display: 'Georgia', 'Times New Roman', serif;
+  --font-heading: 'Georgia', 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-accent: 'Georgia', 'Times New Roman', serif;
+  --h1-size: clamp(2.2rem, 5vw, 3.8rem);
+  --h2-size: clamp(1.4rem, 3vw, 2.0rem);
+  --h3-size: 1.2rem;
+  --body-size: 1.05rem;
+  --small-size: 0.9rem;
+  --micro-size: 0.75rem;
+  --section-spacing: 3.5rem;
+  --card-padding: 1.5rem;
+  --gutter: 1.25rem;
+  --gap: 0.75rem;
+  --radius: 8px;
+  --button-radius: 50px;
+  --card-radius: 12px;
+  --max-width: 920px;
+  --heading-italic: normal;
+  --press-transform: scale(0.96);
+}
+
+
+/* ══════════════════════════ RESET + BASE ══════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--canvas);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ══════════════════════════ TYPOGRAPHY ══════════════════════════ */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-style: var(--heading-italic);
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+h1 { font-size: var(--h1-size); }
+h2 { font-size: var(--h2-size); }
+h3 { font-size: var(--h3-size); }
+p { margin: 0 0 1rem; }
+.small { font-size: var(--small-size); color: var(--text-muted); }
+.micro { font-size: var(--micro-size); letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+
+/* ══════════════════════════ LAYOUT ══════════════════════════ */
+.wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--gutter); }
+section { padding: var(--section-spacing) 0; border-top: 1px solid var(--border); }
+section:first-of-type { border-top: none; }
+
+/* ══════════════════════════ HEADER / HERO ══════════════════════════ */
+header {
+  padding: 5rem var(--gutter) 4rem;
+  text-align: center;
+  
+  border-bottom: 1px solid var(--border);
+  
+}
+header h1 { margin: 0; }
+.tagline {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+/* Open Now badge */
+.open-badge {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: var(--button-radius);
+  background: var(--announcement);
+  color: var(--accent-text);
+  font-size: var(--small-size);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* ══════════════════════════ SERVICES / FEATURES GRID ══════════════════════════ */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--gap);
+}
+.feature-card {
+  background: var(--surface);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  
+  border: 1px solid var(--border);
+  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.feature-card:hover {
+  transform: translateY(-2px);
+  
+}
+
+/* ══════════════════════════ HIGHLIGHTS / CHIPS ══════════════════════════ */
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.chip {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  background: var(--accent-alt);
+  color: var(--text);
+  font-size: var(--small-size);
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.chip:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* ══════════════════════════ TESTIMONIALS ══════════════════════════ */
+.testimonials { display: grid; gap: 1.25rem; }
+blockquote {
+  margin: 0;
+  background: var(--surface-alt);
+  padding: 1.5rem 1.75rem;
+  border-left: 3px solid var(--highlight);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+blockquote p {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+blockquote footer {
+  color: var(--text-muted);
+  font-size: var(--small-size);
+}
+
+/* ══════════════════════════ CTA SECTION ══════════════════════════ */
+.cta {
+  text-align: center;
+  background: var(--surface);
+  border-radius: var(--card-radius);
+  padding: 3rem 2rem;
+  
+  border: 1px solid var(--border);
+  
+}
+.cta h2 { margin-top: 0; }
+.btn {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border-radius: var(--button-radius);
+  background: var(--accent);
+  color: var(--accent-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  text-decoration: none;
+}
+.btn:hover {
+  transform: var(--press-transform);
+  opacity: 0.9;
+  text-decoration: none;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+.btn-outline:hover {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+/* ══════════════════════════ CONTACT / INFO ══════════════════════════ */
+.contact-info {
+  color: var(--text-muted);
+  font-size: var(--small-size);
+  line-height: 1.8;
+}
+.contact-info a { color: var(--accent); }
+.contact-info strong { color: var(--text); }
+
+/* ══════════════════════════ STAR RATING ══════════════════════════ */
+.stars {
+  color: var(--rating-color);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+.rating-text { font-size: var(--small-size); color: var(--text-muted); }
+
+/* ══════════════════════════ FOOTER ══════════════════════════ */
+footer.legal {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--micro-size);
+  padding: 2rem var(--gutter) 3rem;
+  border-top: 1px solid var(--border);
+  margin-top: var(--section-spacing);
+}
+
+/* ══════════════════════════ RESPONSIVE ══════════════════════════ */
+@media (max-width: 640px) {
+  header { padding: 3rem var(--gutter) 2.5rem; }
+  section { padding: 2rem 0; }
+  .features-grid { grid-template-columns: 1fr; }
+  .cta { padding: 2rem 1.5rem; }
+}
+  </style>
+</head>
+<body>
+  
+  <!-- Design brief (for reference):
+    Mood: warm
+    Color direction: warm amber and charcoal with soft cream accents
+    Font feel: clean sans-serif with a touch of editorial serif for warmth and character
+    Why: Reviews describe a welcoming, unhurried spot that transitions from coffee mornings to evening drinks, calling it a hidden gem with personal service. Warm amber tones paired with grounded charcoal evoke that cozy-yity-refined bar atmosphere, while a friendly sans-serif keeps the feel approachable and modern.
+  -->
+  
+  <header>
+    
+    <h1>Sho Coffee & Bar</h1>
+    <p class="tagline">A warm downtown escape from morning to night.</p>
+    
+    <div style="margin-top:1rem;">
+      <span class="stars">★★★★★</span>
+      <span class="rating-text"> 4.7 (540 reviews)</span>
+    </div>
+    
+    
+  </header>
+
+  <main class="wrap">
+    <!-- About -->
+    <section>
+      <h2>About Sho Coffee & Bar</h2>
+      <p>Sho Coffee & Bar is a welcoming downtown spot where the day flows seamlessly from a smooth morning cold brew to an evening drink. Guests describe it as a hidden gem with a relaxed, never-rushed atmosphere. The team takes pride in remembering names and making every visitor feel right at home.</p>
+    </section>
+
+    <!-- Featured services -->
+    
+    <section>
+      <h2>What we offer</h2>
+      <div class="features-grid">
+        
+        <div class="feature-card">Morning coffee</div>
+        
+        <div class="feature-card">Cold brew</div>
+        
+        <div class="feature-card">Evening drinks / bar service</div>
+        
+        <div class="feature-card">Relaxed seating with room to linger</div>
+        
+      </div>
+    </section>
+    
+
+    <!-- Highlights from reviews -->
+    
+    <section>
+      <h2>What people are saying</h2>
+      <div class="highlights">
+        
+        <span class="chip">Incredible atmosphere, great for both morning coffee and evening drinks.</span>
+        
+        <span class="chip">Hidden gem downtown, always a seat and never rushed.</span>
+        
+        <span class="chip">They remembered our names after one visit. Top tier service.</span>
+        
+      </div>
+    </section>
+    
+
+    <!-- Testimonials -->
+    
+    <section>
+      <h2>Reviews</h2>
+      <div class="testimonials">
+        
+        <blockquote>
+          <p>"The cold brew is the smoothest I've had. Staff are welcoming."</p>
+          <footer>— The cold brew is the smoothest</footer>
+        </blockquote>
+        
+        <blockquote>
+          <p>"Hidden gem downtown, always a seat and never rushed."</p>
+          <footer>— Anonymous</footer>
+        </blockquote>
+        
+        <blockquote>
+          <p>"They remembered our names after one visit. Top tier service."</p>
+          <footer>— Anonymous</footer>
+        </blockquote>
+        
+      </div>
+    </section>
+    
+
+    <!-- Hours -->
+    <section>
+      <h2>Hours &amp; Location</h2>
+      <div class="contact-info">
+        <p>See Google Maps for current hours</p>
+        <p><strong>📍 290 William Ave, Winnipeg, MB R3B 0R1</strong></p>
+        
+        
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="text-align:center;">
+      <div class="cta">
+        <h2>Pull up a seat — we'd love to see you.</h2>
+        
+        <a href="#" class="btn btn-outline" style="margin-left:0.5rem;">Get directions</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="legal">
+      <p>Sho Coffee & Bar · Built from customer reviews · <a href="https://sites.reverb256.dev/sho-coffee---bar/">sites.reverb256.dev/sho-coffee---bar/</a></p>
+      
+      <p style="margin-top:0.5rem;opacity:0.6;">Design direction: warm · warm amber and charcoal with soft cream accents · clean sans-serif with a touch of editorial serif for warmth and character</p>
+      
+    </footer>
+  </main>
+</body>
+</html>

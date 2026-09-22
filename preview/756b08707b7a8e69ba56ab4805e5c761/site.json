@@ -1,0 +1,44 @@
+{
+  "business_name": "Espresso Vibe Coffee",
+  "hero_headline": "Espresso Vibe Coffee",
+  "tagline": "",
+  "about_paragraph": "Espresso Vibe Coffee is renowned for its exceptional espresso, crafted with care by dedicated baristas. This cozy cafe offers a peaceful workspace and a welcoming atmosphere, where the friendly owner knows you by name. Enjoy in-house baked pastries and perfectly poured coffee drinks in a setting that feels like home.",
+  "services": [
+    "Expertly Crafted Espresso",
+    "Delicious Oat Lattes",
+    "Pour-over Coffee",
+    "Fresh, In-House Baked Pastries"
+  ],
+  "highlights": [
+    "Best espresso in the city",
+    "Cozy spot, quiet enough to work",
+    "Feels like home"
+  ],
+  "hours_text": "See Google Maps for hours",
+  "contact_html": "",
+  "testimonials": [
+    {
+      "quote": "\"Best espresso in the city, the baristas actually care about the craft.\"",
+      "author": "Anonymous"
+    },
+    {
+      "quote": "\"Friendly owner remembers my order every time. Feels like home.\"",
+      "author": "Anonymous"
+    },
+    {
+      "quote": "\"Cozy spot, quiet enough to work from. The oat latte is unreal.\"",
+      "author": "Anonymous"
+    }
+  ],
+  "cta_headline": "Visit Espresso Vibe Coffee today",
+  "design_brief": {
+    "mood": "warm",
+    "color_direction": "warm natural tones",
+    "font_feel": "clean and modern",
+    "why": "Extracted from existing site"
+  },
+  "model_used": "upgrade",
+  "hero_image": null,
+  "url": "https://sites.reverb256.dev/espresso-vibe-coffee/",
+  "generated_at": "2026-07-25T22:58:36.025662Z"
+}

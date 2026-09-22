@@ -1,0 +1,10 @@
+{
+  "score": 92,
+  "issues": ["Hero section lacks visual imagery or background texture", "No visible primary navigation menu", "Missing specific hours of operation", "No visible contact form, phone number, or email"],
+  "strengths": ["Excellent dark theme with WCAG-compliant contrast", "Strong typographic hierarchy", "Cohesive warm orange accent palette", "Mobile-first responsive single-column layout", "Authentic conversational copywriting", "Effective social proof placement", "Clean card-based layout", "Good use of horizontal rules"],
+  "passed": true,
+  "slug": "espresso-vibe-coffee",
+  "source": "browser_vision",
+  "anti_slop_score": 100,
+  "upgraded_at": "2026-07-25T23:30:00Z"
+}

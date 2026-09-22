@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Next Stop Cafe — Where community, culture, and amazing food meet.</title>
+  <meta name="description" content="Next Stop Cafe is a vibrant and welcoming hub that blends appetite, community, friendship, and culture. Our staff goes out of their way to care for you, whether" />
+  <meta name="keywords" content="Next Stop Cafe, Amazing Food, Friendly & Fast Service, Specialty Drinks, Community Gathering" />
+  <meta property="og:title" content="Next Stop Cafe — Where community, culture, and amazing food meet." />
+  <meta property="og:description" content="Next Stop Cafe is a vibrant and welcoming hub that blends appetite, community, friendship, and culture. Our staff goes out of their way to care for you, whether" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_CA" />
+  
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sites.reverb256.dev/next-stop-cafe/" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Next Stop Cafe",
+  "description": "Next Stop Cafe is a vibrant and welcoming hub that blends appetite, community, friendship, and culture. Our staff goes out of their way to care for you, whether that means making hot water with honey ",
+  
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "334"
+  },
+  
+  "review": [
+    
+    { "@type": "Review", "reviewBody": "Amazing service, friendly and fast. The food is amazing.", "author": { "@type": "Person", "name": "Anonymous" } },
+    
+    { "@type": "Review", "reviewBody": "The staff went out of their way to make hot water with honey to help my throat.", "author": { "@type": "Person", "name": "Anonymous" } },
+    
+    { "@type": "Review", "reviewBody": "A vibrant and welcoming hub. Blends appetite, community, friendship, and culture.", "author": { "@type": "Person", "name": "Anonymous" } }
+    
+  ],
+  "url": "https://sites.reverb256.dev/next-stop-cafe/"
+}
+  </script>
+  <style>
+/* ══════════════════════════ DESIGN TOKENS ══════════════════════════ */
+
+:root {
+  --canvas: #f5f0eb;
+  --surface: #faf5f0;
+  --surface-alt: #ede4da;
+  --text: #2c2420;
+  --text-muted: #7a6e66;
+  --accent: #b85c3a;
+  --accent-alt: #e8d5c8;
+  --accent-text: #ffffff;
+  --border: #ddd0c4;
+  --highlight: #b85c3a;
+  --announcement: #b85c3a;
+  --rating-color: #b85c3a;
+  --font-display: 'Georgia', 'Times New Roman', serif;
+  --font-heading: 'Georgia', 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-accent: 'Georgia', 'Times New Roman', serif;
+  --h1-size: clamp(2.2rem, 5vw, 3.8rem);
+  --h2-size: clamp(1.4rem, 3vw, 2.0rem);
+  --h3-size: 1.2rem;
+  --body-size: 1.05rem;
+  --small-size: 0.9rem;
+  --micro-size: 0.75rem;
+  --section-spacing: 3.5rem;
+  --card-padding: 1.5rem;
+  --gutter: 1.25rem;
+  --gap: 0.75rem;
+  --radius: 8px;
+  --button-radius: 50px;
+  --card-radius: 12px;
+  --max-width: 920px;
+  --heading-italic: normal;
+  --press-transform: scale(0.96);
+}
+
+
+/* ══════════════════════════ RESET + BASE ══════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--canvas);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ══════════════════════════ TYPOGRAPHY ══════════════════════════ */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-style: var(--heading-italic);
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+h1 { font-size: var(--h1-size); }
+h2 { font-size: var(--h2-size); }
+h3 { font-size: var(--h3-size); }
+p { margin: 0 0 1rem; }
+.small { font-size: var(--small-size); color: var(--text-muted); }
+.micro { font-size: var(--micro-size); letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+
+/* ══════════════════════════ LAYOUT ══════════════════════════ */
+.wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--gutter); }
+section { padding: var(--section-spacing) 0; border-top: 1px solid var(--border); }
+section:first-of-type { border-top: none; }
+
+/* ══════════════════════════ HEADER / HERO ══════════════════════════ */
+header {
+  padding: 5rem var(--gutter) 4rem;
+  text-align: center;
+  
+  border-bottom: 1px solid var(--border);
+  
+}
+header h1 { margin: 0; }
+.tagline {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+/* Open Now badge */
+.open-badge {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: var(--button-radius);
+  background: var(--announcement);
+  color: var(--accent-text);
+  font-size: var(--small-size);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* ══════════════════════════ SERVICES / FEATURES GRID ══════════════════════════ */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--gap);
+}
+.feature-card {
+  background: var(--surface);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  
+  border: 1px solid var(--border);
+  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.feature-card:hover {
+  transform: translateY(-2px);
+  
+}
+
+/* ══════════════════════════ HIGHLIGHTS / CHIPS ══════════════════════════ */
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.chip {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  background: var(--accent-alt);
+  color: var(--text);
+  font-size: var(--small-size);
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.chip:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* ══════════════════════════ TESTIMONIALS ══════════════════════════ */
+.testimonials { display: grid; gap: 1.25rem; }
+blockquote {
+  margin: 0;
+  background: var(--surface-alt);
+  padding: 1.5rem 1.75rem;
+  border-left: 3px solid var(--highlight);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+blockquote p {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+blockquote footer {
+  color: var(--text-muted);
+  font-size: var(--small-size);
+}
+
+/* ══════════════════════════ CTA SECTION ══════════════════════════ */
+.cta {
+  text-align: center;
+  background: var(--surface);
+  border-radius: var(--card-radius);
+  padding: 3rem 2rem;
+  
+  border: 1px solid var(--border);
+  
+}
+.cta h2 { margin-top: 0; }
+.btn {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border-radius: var(--button-radius);
+  background: var(--accent);
+  color: var(--accent-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  text-decoration: none;
+}
+.btn:hover {
+  transform: var(--press-transform);
+  opacity: 0.9;
+  text-decoration: none;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+.btn-outline:hover {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+/* ══════════════════════════ CONTACT / INFO ══════════════════════════ */
+.contact-info {
+  color: var(--text-muted);
+  font-size: var(--small-size);
+  line-height: 1.8;
+}
+.contact-info a { color: var(--accent); }
+.contact-info strong { color: var(--text); }
+
+/* ══════════════════════════ STAR RATING ══════════════════════════ */
+.stars {
+  color: var(--rating-color);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+.rating-text { font-size: var(--small-size); color: var(--text-muted); }
+
+/* ══════════════════════════ FOOTER ══════════════════════════ */
+footer.legal {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--micro-size);
+  padding: 2rem var(--gutter) 3rem;
+  border-top: 1px solid var(--border);
+  margin-top: var(--section-spacing);
+}
+
+/* ══════════════════════════ RESPONSIVE ══════════════════════════ */
+@media (max-width: 640px) {
+  header { padding: 3rem var(--gutter) 2.5rem; }
+  section { padding: 2rem 0; }
+  .features-grid { grid-template-columns: 1fr; }
+  .cta { padding: 2rem 1.5rem; }
+}
+  </style>
+</head>
+<body>
+  
+  <!-- Design brief (for reference):
+    Mood: welcoming
+    Color direction: warm amber and honey with vibrant accents
+    Font feel: friendly sans-serif for approachability and warmth
+    Why: The warm amber and honey tones reflect the caring gesture of making hot water with honey, while the friendly typography mirrors the fast, welcoming service described by customers.
+  -->
+  
+  <header>
+    
+    <h1>Next Stop Cafe</h1>
+    <p class="tagline">Where community, culture, and amazing food meet.</p>
+    
+    <div style="margin-top:1rem;">
+      <span class="stars">★★★★★</span>
+      <span class="rating-text"> 4.7 (334 reviews)</span>
+    </div>
+    
+    
+  </header>
+
+  <main class="wrap">
+    <!-- About -->
+    <section>
+      <h2>About Next Stop Cafe</h2>
+      <p>Next Stop Cafe is a vibrant and welcoming hub that blends appetite, community, friendship, and culture. Our staff goes out of their way to care for you, whether that means making hot water with honey to soothe your throat or simply providing friendly, fast service. Come for the amazing food, stay for the community.</p>
+    </section>
+
+    <!-- Featured services -->
+    
+    <section>
+      <h2>What we offer</h2>
+      <div class="features-grid">
+        
+        <div class="feature-card">Amazing Food</div>
+        
+        <div class="feature-card">Friendly & Fast Service</div>
+        
+        <div class="feature-card">Specialty Drinks</div>
+        
+        <div class="feature-card">Community Gathering</div>
+        
+      </div>
+    </section>
+    
+
+    <!-- Highlights from reviews -->
+    
+    <section>
+      <h2>What people are saying</h2>
+      <div class="highlights">
+        
+        <span class="chip">Amazing service, friendly and fast.</span>
+        
+        <span class="chip">The food is amazing.</span>
+        
+        <span class="chip">A vibrant and welcoming hub.</span>
+        
+      </div>
+    </section>
+    
+
+    <!-- Testimonials -->
+    
+    <section>
+      <h2>Reviews</h2>
+      <div class="testimonials">
+        
+        <blockquote>
+          <p>"Amazing service, friendly and fast. The food is amazing."</p>
+          <footer>— Anonymous</footer>
+        </blockquote>
+        
+        <blockquote>
+          <p>"The staff went out of their way to make hot water with honey to help my throat."</p>
+          <footer>— Anonymous</footer>
+        </blockquote>
+        
+        <blockquote>
+          <p>"A vibrant and welcoming hub. Blends appetite, community, friendship, and culture."</p>
+          <footer>— Anonymous</footer>
+        </blockquote>
+        
+      </div>
+    </section>
+    
+
+    <!-- Hours -->
+    <section>
+      <h2>Hours &amp; Location</h2>
+      <div class="contact-info">
+        <p>See Google Maps for current hours</p>
+        
+        
+        
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="text-align:center;">
+      <div class="cta">
+        <h2>Make Your Next Stop Us!</h2>
+        
+        <a href="#" class="btn btn-outline" style="margin-left:0.5rem;">Get directions</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="legal">
+      <p>Next Stop Cafe · Built from customer reviews · <a href="https://sites.reverb256.dev/next-stop-cafe/">sites.reverb256.dev/next-stop-cafe/</a></p>
+      
+      <p style="margin-top:0.5rem;opacity:0.6;">Design direction: welcoming · warm amber and honey with vibrant accents · friendly sans-serif for approachability and warmth</p>
+      
+    </footer>
+  </main>
+</body>
+</html>

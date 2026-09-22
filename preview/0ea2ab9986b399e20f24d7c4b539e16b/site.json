@@ -1,0 +1,39 @@
+{
+  "business_name": "Sho Coffee & Bar",
+  "hero_headline": "Sho Coffee & Bar",
+  "tagline": "",
+  "about_paragraph": "Discover Sho Coffee & Bar, a hidden gem in downtown Winnipeg offering an incredible atmosphere perfect for both morning coffee and evening drinks. Enjoy a smooth cold brew and top-tier service from a welcoming staff who make you feel valued. With a relaxed ambiance, you'll always find a seat and never feel rushed.",
+  "services": [
+    "Specialty Coffee (including Cold Brew)",
+    "Evening Drinks",
+    "Comfortable Seating for Relaxation"
+  ],
+  "highlights": [
+    "Smoothest cold brew I've had",
+    "Always a seat, never rushed",
+    "Top tier service, welcoming staff"
+  ],
+  "hours_text": "See Google Maps for hours",
+  "contact_html": "",
+  "testimonials": [
+    {
+      "quote": "\"Incredible atmosphere, great for both morning coffee and evening drinks.\"",
+      "author": "Anonymous"
+    },
+    {
+      "quote": "\"They remembered our names after one visit. Top tier service.\"",
+      "author": "Anonymous"
+    }
+  ],
+  "cta_headline": "Visit Sho Coffee & Bar today",
+  "design_brief": {
+    "mood": "warm",
+    "color_direction": "warm natural tones",
+    "font_feel": "clean and modern",
+    "why": "Extracted from existing site"
+  },
+  "model_used": "upgrade",
+  "hero_image": null,
+  "url": "https://sites.reverb256.dev/sho-coffee---bar/",
+  "generated_at": "2026-07-25T22:58:36.026784Z"
+}

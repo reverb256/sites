@@ -1,0 +1,10 @@
+{
+  "score": 87,
+  "issues": ["Hero section lacks visual imagery conveying the 'hideaway' atmosphere", "No visible navigation menu", "Feature cards could benefit from icons or hover states", "Missing direct contact info and social media links", "No embedded map or visual location cue"],
+  "strengths": ["Excellent dark theme with high contrast ratios", "Cohesive orange accent on charcoal palette", "Clear visual hierarchy with distinct section dividers", "Strong typography scale", "Effective whitespace creating premium aesthetic", "Customer testimonials provide social proof", "Google Maps integration", "Single-column mobile-friendly layout", "Consistent branding", "Clear final CTA"],
+  "passed": true,
+  "slug": "sho-coffee---bar",
+  "source": "browser_vision",
+  "anti_slop_score": 100,
+  "upgraded_at": "2026-07-25T23:30:00Z"
+}
